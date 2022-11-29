@@ -13,9 +13,12 @@
 :root{
     --bg-black-900: #202020;
     --bg-black-100: #383737;
-    --bg-black-50: #fffbd7;
+    --bg-black-50: #6b6b6b80;
     --text-black-900: #f1e5d4;
     --text-black-700: #ccc4b4;
+}
+html{
+    scroll-behavior: smooth;
 }
 body{
     margin: 0;
@@ -250,4 +253,25 @@ ul{
     border-radius: 50%;
     margin:auto;
     height: 400px;
+}
+
+/* ABOUT */
+
+.about{
+    background: linear-gradient( to top, rgb(226, 123, 4), rgba(236, 192, 130, 0.733));
+}
+.certificate{
+    display: flex;
+    flex-direction: column;
+}
+.itens{
+    display: flex;
+    
+}
+.itens-about{
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    margin-right: 20px;
+    background-color: var(--text-black-900);
 }
