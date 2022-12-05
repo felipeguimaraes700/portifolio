@@ -259,19 +259,64 @@ ul{
 
 .about{
     background: linear-gradient( to top, rgb(226, 123, 4), rgba(236, 192, 130, 0.733));
+    background-image: url(../img/bg-img/bg-about.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
 }
-.certificate{
+.row-about{
+    display: flex;
+    align-items: center;
+    
+}
+.about-me{
+    width: auto; 
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.title-box-about{
+    margin-bottom: 15px;
+}
+.about-title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    color: var(--skin-color);
+}
+.info{
+    background-color: #2020206c;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
 }
 .itens{
     display: flex;
-    
 }
-.itens-about{
+.certificate-conteiner{
+    margin-left: 25px;
+}
+.cetificate-title {
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    color: var(--skin-color);
+    background-color: #202020e5;
+    padding: 10px;
+}
+.itens-certificate{
     height: 150px;
     width: 150px;
-    border: 1px solid black;
-    margin-right: 20px;
+    margin: 10px 5px 10px 10px;
+    border-radius: 5px;
     background-color: var(--text-black-900);
+}
+.certificate{
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    cursor: zoom-in;
 }
