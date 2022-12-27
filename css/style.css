@@ -293,7 +293,7 @@ ul{
     border-radius: 10px;
     color: white;
 }
-.itens{
+.itens-container-certificate{
     display: flex;
 }
 .certificate-conteiner{
@@ -309,14 +309,63 @@ ul{
 }
 .itens-certificate{
     height: 150px;
-    width: 150px;
+    width: 200px;
     margin: 10px 5px 10px 10px;
     border-radius: 5px;
     background-color: var(--text-black-900);
 }
 .certificate{
     height: 150px;
-    width: 150px;
+    width: 200px;
     border-radius: 5px;
     cursor: zoom-in;
+}
+
+/* portifolio */
+
+#portifolio{
+    height: 100vh;
+    background-color: #202020;
+}
+
+.title-portifolio{
+    color: var(--skin-color);
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+    margin-left: 70px;
+    padding-top: 20px;
+}
+.conteiner-itens-portifolio{
+    display: flex;
+    width: 1000px;
+}
+.conteiner-itens{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px 0px 70px;
+    border-radius: 40px;
+    outline: 2px solid var(--skin-color);
+    cursor: pointer;
+    background-color: #ccc4b4;
+    transition: .3s ease-in-out;
+}
+.conteiner-itens:hover{
+    rotate: 45deg;
+    outline: 3px solid var(--skin-color);
+    outline-offset: 5px;
+}
+
+.itens-portifolio{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease-in-out;
+}
+.itens-portifolio:hover{
+    rotate: -45deg;
 }
