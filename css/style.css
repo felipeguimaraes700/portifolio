@@ -304,6 +304,8 @@ ul{
     font-family: 'Dancing Script', cursive;
     font-size: 40px;
     color: var(--skin-color);
+    padding: 0px 20px;
+    border-bottom: 3px solid var(--skin-color);
 }
 .info{
     background-color: #2020206c;
@@ -357,6 +359,15 @@ ul{
     font-family: 'Dancing Script', cursive;
     margin-left: 70px;
     padding-top: 20px;
+    border-bottom: 3px solid  var(--skin-color);
+}
+.portifolio-subtitle{
+    display: flex;
+}
+.last-projects{
+    color: var(--text-black-900);
+    padding-left: 70px;
+    margin-top: 10px;
 }
 .conteiner-itens-portifolio{
     display: flex;
@@ -400,4 +411,26 @@ ul{
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
+}
+.conteiner-contact{
+    height: 84vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.conteiner-title-contact{
+    display: flex;   
+}
+.conteiner-icons-contact{
+    display: flex;
+    justify-content: space-around;
+    width: 90vw;
+}
+.title-mycontact{
+    font-family: 'Dancing Script',
+        cursive;
+    color: var(--skin-color);
+    font-size: 50px;
+    padding: 20px 20px 0px 40px;
+    border-bottom: 3px solid var(--skin-color);
 }
