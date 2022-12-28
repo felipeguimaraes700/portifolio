@@ -59,22 +59,6 @@ ul{
     margin-right: -15px;
     position: relative;
 }
-.btn{
-    font-size: 16px;
-    font-weight: 500;
-    padding: 12px 35px;
-    color: rgb(15, 15, 15);
-    border-radius: 40px;
-    display: inline-block;
-    white-space: nowrap;
-    border: none;
-    background: var(--skin-color);
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-.btn:hover{
-    transform: scale(1.03);
-}
 /* ASIDE */
 .aside{
     width: 270px;
@@ -219,6 +203,40 @@ ul{
 .typing{
     color: var(--skin-color);
 }
+.conteiner-contact-home{
+    display: flex;
+}
+.icons-home{
+    display: flex;
+    align-items: center;
+    width: 150px;
+}
+.icon-github{
+    height: 40px;
+    margin-left: 10px;
+}
+.icon-linkedin{
+    height: 45px;
+    margin-left: 10px;
+}
+.btn {
+    font-size: 16px;
+    font-weight: 500;
+    width: 150px;
+    padding: 12px 35px;
+    color: rgb(15, 15, 15);
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    background: var(--skin-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+}
 .home-info p{
     margin-bottom: 70px;
     font-size: 20px;
@@ -318,9 +336,14 @@ ul{
     height: 150px;
     width: 200px;
     border-radius: 5px;
+    outline: 1px solid var(--skin-color);
     cursor: zoom-in;
+    transition: .2s ease-in-out;
 }
-
+.certificate:hover{
+    outline-offset: 3px;
+    outline: 2px solid var(--skin-color);
+}
 /* portifolio */
 
 #portifolio{
@@ -340,8 +363,8 @@ ul{
     width: 1000px;
 }
 .conteiner-itens{
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -368,4 +391,13 @@ ul{
 }
 .itens-portifolio:hover{
     rotate: -45deg;
+}
+
+/* CONTACT */
+
+#contact{
+    background: url(../img/bg-img/bg-riscas.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
 }
