@@ -333,7 +333,7 @@ ul{
 
 #portifolio{
     height: 100vh;
-    background-color: #202020;
+    background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(117, 117, 117));
 }
 
 .title-portifolio{
