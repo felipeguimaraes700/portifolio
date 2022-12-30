@@ -333,7 +333,7 @@ ul{
 
 #portifolio{
     height: 100vh;
-    background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(117, 117, 117));
+    background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(77, 77, 77));
 }
 
 .title-portifolio{
@@ -357,7 +357,7 @@ ul{
     width: 1000px;
 }
 .conteiner-itens{
-    width: 175px;
+    width: 200px;
     height: 175px;
     display: flex;
     align-items: center;
@@ -366,25 +366,32 @@ ul{
     border-radius: 40px;
     outline: 2px solid var(--skin-color);
     cursor: pointer;
-    background-color: #ccc4b4;
     transition: .3s ease-in-out;
 }
 .conteiner-itens:hover{
-    rotate: 45deg;
     outline: 3px solid var(--skin-color);
     outline-offset: 5px;
 }
 
 .itens-portifolio{
     width: 200px;
-    height: 200px;
+    height: 175px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: .3s ease-in-out;
 }
 .itens-portifolio:hover{
-    rotate: -45deg;
+}
+.itens-portifolio img{
+    width: 200px;
+    height: 175px;
+    border-radius: 40px;
+    filter: brightness(80%);
+    transition: .3s ease-in-out;
+}
+.itens-portifolio img:hover{
+    filter: brightness(100%);
 }
 
 /* CONTACT */
