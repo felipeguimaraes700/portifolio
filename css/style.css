@@ -381,8 +381,6 @@ ul{
     justify-content: center;
     transition: .3s ease-in-out;
 }
-.itens-portifolio:hover{
-}
 .itens-portifolio img{
     width: 200px;
     height: 175px;
@@ -494,4 +492,10 @@ ul{
 .fotter-contact p{
     font-size: 2rem;
     color: var(--skin-color);
+}
+
+.link-contact{
+    position: absolute;
+    padding: 17px;
+    border-radius: 50%;
 }
