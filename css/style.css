@@ -40,8 +40,9 @@ ul{
     padding: 0 30px;
     opacity: 1;
 }
-.main-content{
-    padding-left: 270px;
+#main-container{
+    margin-left: 270px;
+    transition: 0.5s all;
 }
 .padd-15{
     padding-left: 15px;
@@ -61,18 +62,37 @@ ul{
 }
 /* ASIDE */
 .aside{
-    width: 270px;
     background: var(--bg-black-100);
     position: fixed;
     left: 0;
     top: 0;
-    padding: 30px;
+    overflow: hidden;
     height: 100%;
+    width: 270px;
     border-right: 1px solid var(--bg-black-50);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10;
+    transition: 0.5s all;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2.5rem;
+    margin-top: -10px;
+    margin-right: 20px;
+    font-weight: 700;
+    width: 0px;
+    height: 0px;
+    color: #ccc4b4;
+    cursor: pointer;
+    background-color: #ccc4b4;
+    transition: 0.3s all
+}
+.close:hover{
+    color: var(--skin-color)
 }
 .aside .logo{
     position: absolute;
@@ -173,6 +193,24 @@ ul{
 .aside .nav li a i{
     margin-right: 15px;
 }
+#icon-menu{
+    background-color: #00000063;
+    display: none;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    transition: 0.5s all;
+}
+#icon-menu img{
+    margin: 10px;
+    cursor: pointer;
+}
 
 /* HOME */
 .home{
@@ -258,18 +296,16 @@ ul{
 
 /* ABOUT */
 
-.about{
-    background: linear-gradient( to top, rgb(226, 123, 4), rgba(236, 192, 130, 0.733));
+.conteiner-about{
     background-image: url(../img/bg-img/bg-about.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    display: flex;
+    
 }
 .row-about{
     display: flex;
     align-items: center;
-    
 }
 .about-me{
     width: auto; 
@@ -295,12 +331,15 @@ ul{
     padding: 20px;
     border-radius: 10px;
     color: white;
+    width: 70vw;
 }
 .itens-container-certificate{
     display: flex;
+    flex-direction: column;
 }
 .certificate-conteiner{
     margin-left: 25px;
+    margin-right: 25px;
 }
 .cetificate-title {
     margin-top: 50px;
@@ -327,6 +366,7 @@ ul{
 }
 .certificate:hover{
     outline-offset: 3px;
+    overflow: hidden;
     outline: 2px solid var(--skin-color);
 }
 /* portifolio */

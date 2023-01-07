@@ -11,23 +11,33 @@
 </head>
 <body>
     <!-- main conteiner Start-->
-    <div class="main-conteiner">
-        <div class="aside">
+    <div class="main-conteiner" id="main-container">
+        <aside class="aside main-content" id="container-menu">
+            <div class="button-close">
+                <i class="close" onclick="closeMenu()">&times;</i>
+            </div>
+
             <div class="logo">
-                <a href="#"><span>A</span>tlas</a>
+                <a href="#"><span>M</span>enu</a>
             </div>
             <div class="nav-toggle">
                 <span></span>
             </div>
-            <ul class="nav">
+            <ul class="nav" id="menu">
                 <li><a href="#" class="active"><i class="fa fa-home"></i> Home</a></li>
                 <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
                 <li><a href="#portifolio"><i class="fa fa-briefcase"></i> Portifolio</a></li>
                 <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
             </ul>
-        </div>
+        </aside>
+        
+        
         
         <div class="main-content">
+            <div id="icon-menu" onclick="openMenu()">
+                <img src="img/icon/icon-menu.png" alt="">
+            </div>
+
             <section class="home section">
                 <div class="conteiner">
                     <div class="row">
@@ -54,7 +64,7 @@
 
         <!-- about -->
 
-        <section class="about section main-content" id="about">
+        <section class="main-content" id="about">
             <div class="conteiner-about">
                 <div class="row-about">
                     <div class="about-me">
@@ -72,7 +82,7 @@
                     </div>
                     <div class="itens-container-certificate">
 
-                        <div class=itens-certificate><img src="img/certificate/certificado_recode.png" alt="" class="certificate"></div>
+                        <div class=itens-certificate><img src="img/certificate/certificado_recode.png" alt="" class="certificate" onclick="AumentarItem()"></div>
 
                         <div class="itens-certificate"><img src="img/certificate/certificado_rocktseat.png" alt="" class="certificate"></div>
 
@@ -210,6 +220,6 @@
     </div>
     <!-- main conteiner End-->
 
-    <script src=""></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
