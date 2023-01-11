@@ -1,0 +1,109 @@
+#portifolio {
+    height: 100%;
+    background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(77, 77, 77));
+}
+
+/*IMAGENS!!!*/
+
+.galery-container {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.filho-galery-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.container-img-portifolio {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-portifolio-item {
+    position: relative;
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.link-project {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: -10px;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    transition: 0.5s all;
+}
+
+.link-project:hover {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: -10px;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+.title-project {
+    color: var(--skin-color);
+    font-size: 2rem;
+}
+
+.content-legend-portifolio p {
+    color: white;
+}
+
+.img-portifolio {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.link-item-portifolio {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.img-portifolio:hover {
+    transform: scale(1.5);
+    filter: blur(2px);
+}
+
+/*IMAGENS-FINE*/
+
+.title-portifolio {
+    color: var(--skin-color);
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+    margin-left: 70px;
+    padding-top: 20px;
+    border-bottom: 3px solid var(--skin-color);
+}
+
+.portifolio-subtitle {
+    display: flex;
+}
+
+.last-projects {
+    color: var(--text-black-900);
+    padding-left: 70px;
+    margin-top: 10px;
+}

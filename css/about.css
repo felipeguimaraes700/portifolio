@@ -1,0 +1,84 @@
+.conteiner-about {
+    background-image: url(../img/bg-img/bg-about.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.row-about {
+    display: flex;
+    align-items: center;
+}
+
+.about-me {
+    width: auto;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-box-about {
+    margin-bottom: 15px;
+}
+
+.about-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    color: var(--skin-color);
+    padding: 0px 20px;
+    border-bottom: 3px solid var(--skin-color);
+}
+
+.info {
+    background-color: #2020206c;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 70vw;
+}
+
+.itens-container-certificate {
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate-conteiner {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.cetificate-title {
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    color: var(--skin-color);
+    background-color: #202020e5;
+    padding: 10px;
+}
+
+.itens-certificate {
+    height: 150px;
+    width: 200px;
+    margin: 10px 5px 10px 10px;
+    border-radius: 5px;
+    background-color: var(--text-black-900);
+}
+
+.certificate {
+    height: 150px;
+    width: 200px;
+    border-radius: 5px;
+    outline: 1px solid var(--skin-color);
+    cursor: zoom-in;
+    transition: .2s ease-in-out;
+}
+
+.certificate:hover {
+    outline-offset: 3px;
+    overflow: hidden;
+    outline: 2px solid var(--skin-color);
+}
